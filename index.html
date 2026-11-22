@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@
     position: relative;
   }
 
-  /* ARKA PLAN KIVRIMLI DESENLER & NOKTALAR */
+  /* BACKGROUND CURVED PATTERNS & DOTS */
   .bg-pattern {
     position: fixed;
     inset: 0;
@@ -54,7 +54,7 @@
     opacity: 0.72;
   }
 
-  /* EASTER EGG BİLDİRİM ROZETİ */
+  /* EASTER EGG TOAST */
   .easter-toast {
     position: fixed;
     bottom: 22px;
@@ -78,7 +78,7 @@
     transform: translateX(-50%) translateY(0);
   }
 
-  /* CHARACTER X: ŞİMŞEK / IŞIK PATLAMASI */
+  /* LIGHTNING FLASH OVERLAY */
   .lightning-overlay {
     position: fixed;
     inset: 0;
@@ -101,7 +101,7 @@
     100% { opacity: 0; }
   }
 
-  /* CHARACTER Y: UÇUŞAN KARGA TÜYLERİ & SNAKE: SÜZÜLEN YILAN PARÇALARI */
+  /* CROW FEATHERS & SNAKE DROPS */
   .feather {
     position: fixed;
     top: -40px;
@@ -132,7 +132,7 @@
     100% { transform: translateY(96vh) translateX(var(--sway1)) rotate(315deg); opacity: 0; }
   }
 
-  /* TAM BOYUT ANA SAHNE */
+  /* FULL STAGE */
   .full-stage {
     width: 100%;
     min-height: 100vh;
@@ -144,7 +144,7 @@
     z-index: 2;
   }
 
-  /* SOLDA AŞAĞIDAN YUKARI KÜÇÜK İMZA */
+  /* LEFT VERTICAL CREDIT */
   .left-vertical-credit {
     position: absolute;
     left: 14px;
@@ -161,7 +161,7 @@
     user-select: none;
   }
 
-  /* SAYFAYA SABİTLİ, KUTULARIN ÜSTÜNDE DURAN KAN DAMLACIKLARI */
+  /* BLOOD DROPS OVERLAY */
   .blood-drops-layer {
     position: absolute;
     inset: 0;
@@ -184,7 +184,7 @@
     position: relative;
   }
 
-  /* BANNER KUTU STİLİ */
+  /* BANNER BOX */
   .banner-box {
     position: relative;
     background: linear-gradient(120deg, rgba(24, 12, 42, 0.95) 0%, rgba(12, 24, 25, 0.94) 100%);
@@ -209,7 +209,7 @@
     z-index: 2;
   }
 
-  /* SOL ÜST DE'MENTE KUTUSU */
+  /* TOP LEFT HERO BOX */
   .hero-box {
     width: fit-content;
     min-width: 450px;
@@ -236,7 +236,7 @@
     transform: scale(1.08);
   }
 
-  /* GLITCH & PARLAMA EFEKTLİ BAŞLIK + T HARFİNDEN AKAN KAN DAMLASI */
+  /* GLITCH TITLE + BLOOD DRIP ON T */
   .main-title {
     font-family: 'Cinzel', serif;
     font-weight: 900;
@@ -317,7 +317,7 @@
     93% { opacity: 0.85; transform: translate(3px, -1px); clip-path: inset(40% 0 30% 0); }
   }
 
-  /* SAĞ ÇAPRAZ ALTINDAKİ NAVİGASYON KUTUSU */
+  /* NAVIGATION BOX */
   .nav-diagonal {
     align-self: flex-start;
     margin-left: 16vw;
@@ -367,7 +367,7 @@
     pointer-events: none;
   }
 
-  /* TAM GENİŞLİK İÇERİK KUTUSU */
+  /* MAIN CONTENT STAGE */
   .content-stage {
     width: 100%;
     padding: 34px 38px;
@@ -411,7 +411,7 @@
     filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.45));
   }
 
-  /* TÜM KUTULARDA SAĞDA DURAN LOGO DÜZENİ */
+  /* RIGHT-ALIGNED LOGO IN ALL SECTIONS */
   .box-inner-flex {
     display: flex;
     align-items: flex-start;
@@ -460,7 +460,7 @@
     transition: margin-top 0.28s ease;
   }
 
-  /* KARAKTER & AİLE AĞACI SEÇİM KARTLARI */
+  /* CHARACTER & FAMILY TREE CARDS */
   .char-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -521,7 +521,7 @@
     color: var(--purple-soft);
   }
 
-  /* TERRITORY: BÖLGE GÖRSEL ALANI + KARAKTER MEKANLARI */
+  /* TERRITORY: ZONES & VENUES */
   .territory-subgrid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -609,7 +609,7 @@
     min-height: 64px;
   }
 
-  /* TAM EKRAN MODALLAR */
+  /* FULLSCREEN MODALS */
   .full-modal {
     display: none;
     position: fixed;
@@ -658,7 +658,7 @@
     color: #07040c;
   }
 
-  /* DÜMDÜZ YAN YANA FAMILY TREE DÜZENİ */
+  /* HORIZONTAL FAMILY TREE */
   .parents-row {
     display: flex;
     align-items: center;
@@ -787,14 +787,14 @@
     color: var(--text-light);
   }
 
-  /* HOVER İLE AÇILAN MİNİK BİLGİ KUTUSU */
+  /* HOVER INFO CARD */
   .node-hover-card {
     display: none;
     position: absolute;
     bottom: calc(100% + 8px);
     left: 50%;
     transform: translateX(-50%);
-    min-width: 205px;
+    min-width: 210px;
     background: #090510;
     border: 1px solid var(--emerald-main);
     padding: 8px 10px;
@@ -811,7 +811,7 @@
     display: block;
   }
 
-  /* KARAKTER DOSYASI STİLLERİ */
+  /* DOSSIER STYLES */
   .rabbit-ears-container {
     display: none;
     position: absolute;
@@ -838,6 +838,32 @@
   @keyframes earsSlideUp {
     from { transform: translateY(42px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* FULL-HEIGHT COILED SNAKE WRAPPING THE SNAKE DOSSIER CARD */
+  .snake-coil-wrap {
+    display: none;
+    position: absolute;
+    inset: -16px -22px;
+    pointer-events: none;
+    z-index: 25;
+  }
+
+  .snake-coil-wrap.visible {
+    display: block;
+    animation: snakeCoilFadeIn 0.45s ease-out forwards;
+  }
+
+  .snake-coil-wrap svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.45));
+  }
+
+  @keyframes snakeCoilFadeIn {
+    from { opacity: 0; transform: scale(0.985); }
+    to { opacity: 1; transform: scale(1); }
   }
 
   .dossier-paper {
@@ -954,13 +980,13 @@
 </head>
 <body>
 
-  <!-- EASTER EGG BİLDİRİMİ -->
+  <!-- EASTER EGG TOAST -->
   <div id="easterToast" class="easter-toast"></div>
 
-  <!-- ŞİMŞEK / IŞIK PATLAMASI KATMANI (CHARACTER X) -->
+  <!-- LIGHTNING FLASH OVERLAY -->
   <div id="lightningOverlay" class="lightning-overlay"></div>
 
-  <!-- ARKA PLAN KIVRIMLI DESENLER & NOKTALAR -->
+  <!-- BACKGROUND PATTERNS & DOTS -->
   <div class="bg-pattern">
     <svg viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
       <g stroke="#a855f7" stroke-width="1.3" opacity="0.55">
@@ -989,10 +1015,10 @@
 
   <div class="full-stage">
 
-    <!-- SOLDA AŞAĞIDAN YUKARI KÜÇÜK İMZA -->
+    <!-- LEFT VERTICAL CREDIT -->
     <span class="left-vertical-credit">written by gunessimo</span>
 
-    <!-- SAYFAYA SABİTLİ, KUTULARIN ÜSTÜNDE DURAN KAN DAMLACIKLARI -->
+    <!-- BLOOD DROPS OVERLAY -->
     <div class="blood-drops-layer" aria-hidden="true">
       <div class="blood-drop" style="top: 68px; left: 24%; width: 10px; height: 14px; transform: rotate(12deg);"></div>
       <div class="blood-drop" style="top: 235px; left: 58%; width: 15px; height: 21px; transform: rotate(-9deg);"></div>
@@ -1003,7 +1029,7 @@
       <div class="blood-drop" style="top: 670px; left: 86%; width: 9px; height: 13px;"></div>
     </div>
 
-    <!-- ÜST ÇAPRAZ DÜZEN -->
+    <!-- TOP DIAGONAL GRID -->
     <div class="top-diagonal-grid">
 
       <header class="banner-box hero-box">
@@ -1014,7 +1040,7 @@
           <circle cx="515" cy="52" r="6" fill="#10b981" opacity="0.65"/>
         </svg>
 
-        <!-- KORKUTUCU KARGA SİLÜETİ -->
+        <!-- PERCHED CROW SILHOUETTE -->
         <svg class="crow-perch" onclick="triggerCrowEasterEgg()" title="..." viewBox="0 0 90 78" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 58 L2 68 L18 63 L8 73 L26 65 L38 56 Z" fill="#090510" stroke="#a855f7" stroke-width="1.2"/>
           <path d="M24 56 C26 42, 34 26, 48 20 C54 17, 60 12, 66 13 L84 18 L67 23 C66 28, 62 34, 56 39 L62 49 L46 47 L42 58 L46 69 L41 69 L38 60 L33 69 L29 69 L33 58 Z" fill="#0b0614" stroke="#10b981" stroke-width="1.5" stroke-linejoin="round"/>
@@ -1024,7 +1050,7 @@
 
         <div class="banner-content">
           <h1 class="main-title" onclick="triggerTitleEasterEgg()">
-            DE'<span class="emerald-part">MEN</span><span class="emerald-part t-drip-wrapper">T<span class="blood-drip-t" title="T harfinden akan kan damlası"></span></span><span class="emerald-part">E</span>
+            DE'<span class="emerald-part">MEN</span><span class="emerald-part t-drip-wrapper">T<span class="blood-drip-t" title="Blood drop dripping from T"></span></span><span class="emerald-part">E</span>
           </h1>
         </div>
       </header>
@@ -1071,7 +1097,7 @@
 
     </div>
 
-    <!-- TAM GENİŞLİK İÇERİK KUTUSU (LOGO TÜM SEKMELERDE SAĞDA) -->
+    <!-- FULL-WIDTH CONTENT STAGE -->
     <main class="banner-box content-stage">
       <svg class="banner-decor" viewBox="0 0 1000 500" preserveAspectRatio="none" fill="none">
         <circle cx="930" cy="410" r="130" fill="#a855f7" opacity="0.1"/>
@@ -1084,7 +1110,7 @@
         <section id="home" class="tab-section active">
           <div class="section-header-row">
             <h2 class="section-heading">WELCOME TO THE MIND</h2>
-            <svg class="emblem-badge" viewBox="0 0 48 48" fill="none" title="Aslan Amblemi">
+            <svg class="emblem-badge" viewBox="0 0 48 48" fill="none" title="Lion Emblem">
               <path d="M24 4 L34 10 L40 20 L36 33 L24 44 L12 33 L8 20 L14 10 Z" stroke="#a855f7" stroke-width="1.8" fill="rgba(168,85,247,0.1)"/>
               <path d="M18 18 L21 15 L24 18 L27 15 L30 18 L29 27 L24 32 L19 27 Z" stroke="#10b981" stroke-width="1.6"/>
               <circle cx="21" cy="22" r="1.3" fill="#10b981"/>
@@ -1095,10 +1121,10 @@
           <div class="box-inner-flex">
             <div class="box-text-flow">
               <p class="lore-text">
-                Şehrin gölgelerinde güç yalnızca kaba kuvvetle ölçülmez; asıl kontrol zihinlerin içindedir. <strong>De'Mente</strong>, stratejiyi, manipülasyonu ve soğukkanlı zekayı birer silaha dönüştüren yeraltı oluşumunun resmi arşividir.
+                In the shadows of the city, power is never measured by brute force alone; true control lives inside the mind. <strong>De'Mente</strong> is the official archive of an underground syndicate turning strategy, manipulation, and cold calculation into weapons.
               </p>
               <div class="quote-block">
-                "Akıl sınırlarını aştığında delilik başlar; De'Mente ikisinin tam ortasında hüküm sürer."
+                "When reason crosses its limits, madness begins; De'Mente rules right between the two."
               </div>
             </div>
 
@@ -1122,7 +1148,7 @@
           <div class="box-inner-flex">
             <div class="box-text-flow">
               <p class="lore-text">
-                [Buraya çetenin kuruluş hikayesi, şehirdeki güç dengeleri ve OG GEN / NEXT GEN dönemleri eklenecek.]
+                [Syndicate origins, city power balances, and OG GEN / NEXT GEN chronicles to be added here.]
               </p>
             </div>
             <img
@@ -1137,7 +1163,7 @@
         <section id="characters" class="tab-section">
           <div class="section-header-row">
             <h2 class="section-heading">DE'MENTE // ROSTER</h2>
-            <svg class="emblem-badge" viewBox="0 0 48 48" fill="none" title="Tavşan Simgesi">
+            <svg class="emblem-badge" viewBox="0 0 48 48" fill="none" title="Rabbit Emblem">
               <path d="M19 22 C16 12, 17 6, 20 6 C23 6, 23 14, 23 20 M26 20 C26 14, 27 6, 30 6 C33 6, 33 12, 29 22" stroke="#10b981" stroke-width="1.8" stroke-linecap="round"/>
               <ellipse cx="24" cy="30" rx="8" ry="9" stroke="#a855f7" stroke-width="1.8" fill="rgba(168,85,247,0.1)"/>
               <circle cx="21" cy="29" r="1.4" fill="#10b981"/>
@@ -1146,7 +1172,7 @@
           </div>
           <div class="box-inner-flex">
             <div class="box-text-flow">
-              <p class="lore-text">Dosyasını açmak istediğin karakter kartına tıkla:</p>
+              <p class="lore-text">Click a character card to open their dossier:</p>
 
               <div class="char-grid">
                 <div class="char-card" onclick="openDossier('charX')">
@@ -1154,13 +1180,13 @@
                     <img src="https://i.ibb.co/C5st8YP9/e671e7e5-4f2b-4ab4-b81c-b2eb60362ec4.jpg" alt="Ramiro Bravura">
                   </div>
                   <div class="char-name-below">RAMIRO BRAVURA</div>
-                  <div class="char-role">DOSYAYI AÇ // THE BOSS</div>
+                  <div class="char-role">OPEN DOSSIER // EL LION</div>
                 </div>
 
                 <div class="char-card" onclick="openDossier('charWolf')">
-                  <div class="char-photo-box">[WOLF FOTO]</div>
+                  <div class="char-photo-box">[WOLF PHOTO]</div>
                   <div class="char-name-below">WOLF</div>
-                  <div class="char-role">DOSYAYI AÇ // BOSS YARDIMCISI</div>
+                  <div class="char-role">OPEN DOSSIER // RIGHT HAND</div>
                 </div>
 
                 <div class="char-card" onclick="openDossier('charY')">
@@ -1168,19 +1194,19 @@
                     <img src="https://i.ibb.co/TMH6q1N0/2d256d51-381d-4f04-b470-c7e25854804f.jpg" alt="Crow Character">
                   </div>
                   <div class="char-name-below">CROW</div>
-                  <div class="char-role">DOSYAYI AÇ // CROW (AYRI KARAKTER)</div>
+                  <div class="char-role">OPEN DOSSIER // CROW</div>
                 </div>
 
                 <div class="char-card" onclick="openDossier('charZ')">
-                  <div class="char-photo-box">[FOTO Z]</div>
+                  <div class="char-photo-box">[PHOTO Z]</div>
                   <div class="char-name-below">CHARACTER Z</div>
-                  <div class="char-role">DOSYAYI AÇ // TAVŞAN</div>
+                  <div class="char-role">OPEN DOSSIER // RABBIT</div>
                 </div>
 
                 <div class="char-card" onclick="openDossier('charSnake')">
-                  <div class="char-photo-box">[SNAKE FOTO]</div>
+                  <div class="char-photo-box">[SNAKE PHOTO]</div>
                   <div class="char-name-below">SNAKE</div>
-                  <div class="char-role">DOSYAYI AÇ // SNAKE</div>
+                  <div class="char-role">OPEN DOSSIER // SNAKE</div>
                 </div>
               </div>
             </div>
@@ -1200,7 +1226,7 @@
           </div>
           <div class="box-inner-flex">
             <div class="box-text-flow">
-              <p class="lore-text">Aile ağacını tam ekran görüntülemek istediğin karaktere tıkla:</p>
+              <p class="lore-text">Click a character to inspect their family tree in full screen:</p>
 
               <div class="char-grid">
                 <div class="char-card" onclick="openFamilyTreeModal('charX')">
@@ -1208,11 +1234,11 @@
                     <img src="https://i.ibb.co/C5st8YP9/e671e7e5-4f2b-4ab4-b81c-b2eb60362ec4.jpg" alt="Ramiro Bravura">
                   </div>
                   <div class="char-name-below">RAMIRO BRAVURA</div>
-                  <div class="char-role">FAMILY TREE // BRAVURA AİLESİ</div>
+                  <div class="char-role">FAMILY TREE // BRAVURA HOUSE</div>
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charWolf')">
-                  <div class="char-photo-box">[WOLF FOTO]</div>
+                  <div class="char-photo-box">[WOLF PHOTO]</div>
                   <div class="char-name-below">WOLF</div>
                   <div class="char-role">FAMILY TREE // WOLF</div>
                 </div>
@@ -1226,13 +1252,13 @@
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charZ')">
-                  <div class="char-photo-box">[FOTO Z]</div>
+                  <div class="char-photo-box">[PHOTO Z]</div>
                   <div class="char-name-below">CHARACTER Z</div>
-                  <div class="char-role">FAMILY TREE // TAVŞAN</div>
+                  <div class="char-role">FAMILY TREE // RABBIT</div>
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charSnake')">
-                  <div class="char-photo-box">[SNAKE FOTO]</div>
+                  <div class="char-photo-box">[SNAKE PHOTO]</div>
                   <div class="char-name-below">SNAKE</div>
                   <div class="char-role">FAMILY TREE // SNAKE</div>
                 </div>
@@ -1256,40 +1282,40 @@
             <div class="box-text-flow">
               <div class="territory-subgrid">
                 <div class="subpanel-box">
-                  <div class="subpanel-title">BÖLGELER</div>
+                  <div class="subpanel-title">ZONES</div>
 
                   <button class="location-btn active-loc" onclick="selectTerritory('zone1', this)">
-                    <span>BÖLGE 01</span>
-                    <span style="color: var(--emerald-soft);">[GÖRSEL]</span>
+                    <span>ZONE 01</span>
+                    <span style="color: var(--emerald-soft);">[VISUAL]</span>
                   </button>
 
                   <button class="location-btn" onclick="selectTerritory('zone2', this)">
-                    <span>BÖLGE 02</span>
-                    <span style="color: var(--emerald-soft);">[GÖRSEL]</span>
+                    <span>ZONE 02</span>
+                    <span style="color: var(--emerald-soft);">[VISUAL]</span>
                   </button>
 
                   <div id="mapImageSlot" class="map-image-slot">
-                    BÖLGE 01 — Harita görseli buraya eklenecek.
+                    ZONE 01 — Territory visual will be placed here.
                   </div>
                 </div>
 
                 <div class="subpanel-box">
-                  <div class="subpanel-title">KARAKTER MEKANLARI</div>
+                  <div class="subpanel-title">CHARACTER VENUES</div>
 
-                  <div class="venue-card" onclick="showVenue('Ramiro Bravura Mekanı', 'Strateji, anlaşma ve Şili şarabı/puro masası.')">
-                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Ramiro Bravura Mekanı</div>
+                  <div class="venue-card" onclick="showVenue('Ramiro Bravura Venue', 'Private table for negotiations, fine Chilean wine, and cigars.')">
+                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Ramiro Bravura Venue</div>
                   </div>
 
-                  <div class="venue-card" onclick="showVenue('Wolf Mekanı', 'Boss yardımcısı / operasyon noktası.')">
-                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Wolf Mekanı</div>
+                  <div class="venue-card" onclick="showVenue('Wolf Venue', 'Right-hand operational safehouse and field base.')">
+                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Wolf Venue</div>
                   </div>
 
-                  <div class="venue-card" onclick="showVenue('Crow Mekanı', 'Gözlem ve haberleşme noktası.')">
-                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Crow Mekanı</div>
+                  <div class="venue-card" onclick="showVenue('Crow Venue', 'Reconnaissance and shadow intelligence spot.')">
+                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Crow Venue</div>
                   </div>
 
                   <div id="venueDetailBox" class="venue-detail-box">
-                    Bir mekana tıklayarak detayını görebilirsin.
+                    Click a venue to view details.
                   </div>
                 </div>
               </div>
@@ -1308,7 +1334,7 @@
           <div class="section-header-row"><h2 class="section-heading">NPC'S // CLASSIFIED</h2></div>
           <div class="box-inner-flex">
             <div class="box-text-flow">
-              <p class="lore-text">Yan karakterler ve muhbirler buraya eklenecek.</p>
+              <p class="lore-text">Side characters, fixers, and informants to be added here.</p>
             </div>
             <img
               class="box-inner-logo"
@@ -1322,23 +1348,23 @@
     </main>
   </div>
 
-  <!-- TAM EKRAN FAMILY TREE MODALI (DÜMDÜZ YAN YANA) -->
+  <!-- FULLSCREEN FAMILY TREE MODAL -->
   <div id="familyTreeModal" class="full-modal" onclick="closeFamilyModalOutside(event)">
     <div class="modal-shell">
-      <button class="close-modal-btn" onclick="closeFamilyTreeModal()">✕ KAPAT</button>
+      <button class="close-modal-btn" onclick="closeFamilyTreeModal()">✕ CLOSE</button>
       <div class="section-header-row" style="margin-bottom:8px;">
         <h2 id="treeModalTitle" class="section-heading" style="font-size:1.45rem;">FAMILY TREE</h2>
       </div>
 
-      <!-- BABA (? GLİTCH) — MARRIAGE — DOLORES BRAVURA -->
+      <!-- FATHER (? GLITCH) — MARRIAGE — DOLORES BRAVURA -->
       <div class="parents-row">
         <div class="tree-node unknown-father-node">
           <div class="tree-thumb"><span class="glitch-q">?</span></div>
           <div class="node-title" style="color:var(--text-muted);">?</div>
           <div class="node-hover-card" id="ft-father-hover">
-            <strong>Yaş:</strong> ?<br>
-            <strong>Medeni Durum:</strong> ?<br>
-            <strong>Durum:</strong> ?
+            <strong>Age:</strong> ?<br>
+            <strong>Marital Status:</strong> ?<br>
+            <strong>Status:</strong> ?
           </div>
         </div>
 
@@ -1348,83 +1374,145 @@
         </div>
 
         <div class="tree-node">
-          <div class="tree-thumb">[FOTO]</div>
+          <div class="tree-thumb">[PHOTO]</div>
           <div class="node-title" id="ft-mother-title">DOLORES BRAVURA</div>
           <div class="node-hover-card" id="ft-mother-hover">
-            <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> Evli<br>
-            <strong>Durum:</strong> Live
+            <strong>Mother:</strong> Dolores Bravura<br>
+            <strong>Marital Status:</strong> Married<br>
+            <strong>Status:</strong> Live
           </div>
         </div>
       </div>
 
       <div class="tree-drop-line"></div>
 
-      <!-- 5 KARDEŞ DÜMDÜZ YAN YANA -->
+      <!-- 5 SIBLINGS IN A STRAIGHT HORIZONTAL ROW -->
       <div class="siblings-horizontal-bar">
         <div class="tree-node">
-          <div class="tree-thumb" id="ft-sib-01">[FOTO]</div>
+          <div class="tree-thumb" id="ft-sib-01">[PHOTO]</div>
           <div class="node-title" id="ft-sib-01-title">FRESIA</div>
           <div class="node-hover-card" id="ft-sib-01-hover">
-            <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> Bekar<br>
-            <strong>Durum:</strong> Live
+            <strong>Name:</strong> Fresia<br>
+            <strong>Marital Status:</strong> Single<br>
+            <strong>Status:</strong> Live
           </div>
         </div>
 
         <div class="tree-node">
-          <div class="tree-thumb" id="ft-sib-02">[FOTO]</div>
+          <div class="tree-thumb" id="ft-sib-02">[PHOTO]</div>
           <div class="node-title" id="ft-sib-02-title">CASSANDRA</div>
           <div class="node-hover-card" id="ft-sib-02-hover">
-            <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> Bekar<br>
-            <strong>Durum:</strong> Live
+            <strong>Name:</strong> Cassandra<br>
+            <strong>Marital Status:</strong> Single<br>
+            <strong>Status:</strong> Live
           </div>
         </div>
 
         <div class="tree-node">
-          <div class="tree-thumb" id="ft-sib-03">[FOTO]</div>
+          <div class="tree-thumb" id="ft-sib-03">[PHOTO]</div>
           <div class="node-title" id="ft-sib-03-title">DULCE</div>
           <div class="node-hover-card" id="ft-sib-03-hover">
-            <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> Bekar<br>
-            <strong>Durum:</strong> Live
+            <strong>Name:</strong> Dulce<br>
+            <strong>Marital Status:</strong> Single<br>
+            <strong>Status:</strong> Live
           </div>
         </div>
 
         <div class="tree-node">
-          <div class="tree-thumb" id="ft-sib-04">[FOTO]</div>
-          <div class="node-title" id="ft-sib-04-title">İSIDORA</div>
+          <div class="tree-thumb" id="ft-sib-04">[PHOTO]</div>
+          <div class="node-title" id="ft-sib-04-title">ISIDORA</div>
           <div class="node-hover-card" id="ft-sib-04-hover">
-            <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> Bekar<br>
-            <strong>Durum:</strong> Live
+            <strong>Name:</strong> Isidora<br>
+            <strong>Marital Status:</strong> Single<br>
+            <strong>Status:</strong> Live
           </div>
         </div>
 
         <div class="tree-node boss-node">
-          <div class="tree-thumb" id="ft-sib-05">[FOTO]</div>
+          <div class="tree-thumb" id="ft-sib-05">[PHOTO]</div>
           <div class="node-title" id="ft-sib-05-title">RAMIRO BRAVURA</div>
           <div class="node-hover-card" id="ft-sib-05-hover">
-            <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> Bekar<br>
-            <strong>Durum:</strong> Live
+            <strong>Name:</strong> Ramiro Bravura<br>
+            <strong>Marital Status:</strong> Single<br>
+            <strong>Status:</strong> Live
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- TAM EKRAN AÇILAN KARAKTER DOSYASI PENCERESİ -->
+  <!-- FULLSCREEN CHARACTER DOSSIER MODAL -->
   <div id="dossierModal" class="full-modal" onclick="closeDossierOutside(event)">
     <div class="modal-shell" style="max-width:900px; background:#1b102c;">
-      <button class="close-modal-btn" onclick="closeDossier()">✕ DOSYAYI KAPAT</button>
+      <button class="close-modal-btn" onclick="closeDossier()">✕ CLOSE DOSSIER</button>
 
-      <!-- CHARACTER Z İÇİN DOSYA KUTUCUKLARININ ÜSTÜNDE BELİREN, YUKARI BAKAN BEYAZ TAVŞAN KULAKLARI -->
-      <div id="rabbitEars" class="rabbit-ears-container" onclick="hideRabbitEars(event)" title="Kulaklara tıkla!">
+      <!-- WHITE RABBIT EARS FOR CHARACTER Z -->
+      <div id="rabbitEars" class="rabbit-ears-container" onclick="hideRabbitEars(event)" title="Tap the ears!">
         <svg viewBox="0 0 96 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M26 2 C16 18, 16 48, 28 60 C38 62, 42 36, 36 4 C34 0, 28 0, 26 2 Z" fill="#ffffff" stroke="#1a1029" stroke-width="2"/>
           <path d="M70 2 C80 18, 80 48, 68 60 C58 62, 54 36, 60 4 C62 0, 68 0, 70 2 Z" fill="#ffffff" stroke="#1a1029" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <!-- FULL-HEIGHT COILED SNAKE WRAPPING AROUND THE SNAKE DOSSIER CARD -->
+      <div id="snakeCoilWrap" class="snake-coil-wrap" aria-hidden="true">
+        <svg viewBox="0 0 940 760" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Coiled serpentine body winding down along the sides and wrapping across the card -->
+          <path
+            d="M 910 24
+               C 938 85, 882 145, 916 215
+               C 944 275, 875 335, 912 405
+               C 942 465, 878 530, 915 605
+               C 936 655, 875 710, 740 738
+               C 520 755, 220 742, 42 715
+               C -18 675, 48 605, 10 540
+               C -22 480, 48 415, 12 345
+               C -20 280, 46 210, 10 140
+               C -18 85, 22 36, 54 22"
+            stroke="#10b981"
+            stroke-width="11"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M 910 24
+               C 938 85, 882 145, 916 215
+               C 944 275, 875 335, 912 405
+               C 942 465, 878 530, 915 605
+               C 936 655, 875 710, 740 738
+               C 520 755, 220 742, 42 715
+               C -18 675, 48 605, 10 540
+               C -22 480, 48 415, 12 345
+               C -20 280, 46 210, 10 140
+               C -18 85, 22 36, 54 22"
+            stroke="#06281e"
+            stroke-width="6.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M 910 24
+               C 938 85, 882 145, 916 215
+               C 944 275, 875 335, 912 405
+               C 942 465, 878 530, 915 605
+               C 936 655, 875 710, 740 738
+               C 520 755, 220 742, 42 715
+               C -18 675, 48 605, 10 540
+               C -22 480, 48 415, 12 345
+               C -20 280, 46 210, 10 140
+               C -18 85, 22 36, 54 22"
+            stroke="#a855f7"
+            stroke-width="2"
+            stroke-dasharray="7 9"
+            stroke-linecap="round"
+          />
+          <!-- Snake Head at top-right coil -->
+          <g transform="translate(894, 8) rotate(22)">
+            <path d="M 16 2 C 28 4, 34 14, 30 26 C 24 32, 10 32, 4 26 C 0 14, 6 4, 16 2 Z" fill="#092e22" stroke="#10b981" stroke-width="2"/>
+            <circle cx="11" cy="12" r="2.2" fill="#6ee7b7"/>
+            <circle cx="21" cy="12" r="2.2" fill="#6ee7b7"/>
+            <path d="M 16 30 L 16 42 M 16 38 L 11 44 M 16 38 L 21 44" stroke="#ef4444" stroke-width="1.8" stroke-linecap="round"/>
+          </g>
         </svg>
       </div>
 
@@ -1478,42 +1566,42 @@
 
     const dossiers = {
       charX: {
-        name: "RAMIRO BRAVURA // THE BOSS",
+        name: "RAMIRO BRAVURA // EL LION",
         age: "32",
-        birth: "Valparaíso, Şili",
-        res: "De'Mente Merkez / Uluslararası Hat",
-        hair: "Koyu kahverengi / Siyah, özenle geriye taranmış, ensede kısa ve keskin kesim",
-        eyes: "Koyu kehribar / Keskin kahverengi",
+        birth: "Valparaiso, Chile",
+        res: "De'Mente HQ / International Network",
+        hair: "Dark brown / black, neatly combed back, short sharp taper at the nape",
+        eyes: "Dark amber / sharp brown",
         height: "194 cm (6'4\")",
         weight: "104 kg (229 lbs)",
-        sign: "Özel dikim koyu İtalyan takım elbise, gümüş/altın Zippo, kaliteli Şili puroları ve pahalı Şili şarabı ikramı; ellerini birleştirerek sakin konuşma.",
+        sign: "Gold Zippo lighter engraved with a lion emblem, bespoke dark Italian suits, composed posture with hands steepled.",
         portraitHtml: `<img src="${IMG_BOSS}" alt="Ramiro Bravura">`,
         emblemHtml: "[EMBLEM / 02]",
-        skills: "Makyavelist diplomasi ve manipülasyon, stratejik zekâ ve kriz yönetimi, çok dillilik (İspanyolca, İngilizce, İtalyanca/Portekizce), yakın dövüş ve fiziksel güç, finans ve kara para aklama.",
-        bio: "Anaerkil (matriarchal/femdom) Bravura ailesinin içinde büyüyen 'erkek aslan'. Katı ve taş kalpli anne Dolores Bravura'nın ve babasının içki masasında organlarının satılıp bedeninin nehre bırakıldığı gölgenin ortasında; korkuyla boyun eğdirmek yerine karşı tarafa söz hakkı hissettirip anlaşma ve stratejiyle ilerleyen medeni, dokunulmaz bir yeraltı imparatorluğu kurmayı hedefliyor.",
-        notes: "Aile kardeşleri: Fresia (38, en büyük abla — WW gücü, Şili gang lideri, Ramiro ile güç savaşı ve ters düşme), Cassandra (36, ikinci abla — devlet/istihbarat/FBI içi sızma veya suikastçı, kirli iz silme), Dulce (35, ikiz — tatlı görünümlü acımasız işkenceci/çatlak, tehdit aracı), İsidora (35, ikiz — güler yüzlü/sakin, femdom köle beklentisi, uyuşturucu sevkiyatı ve kartel bağlantıları). Sağ kolu/yardımcısı Wolf."
+        skills: "Machiavellian diplomacy and manipulation, strategic intellect and crisis management, multilingual fluency (Spanish, English, Italian/Portuguese), close-quarters combat and raw strength, finance and money laundering.",
+        bio: "Raised as the 'male lion' inside the matriarchal, rigid Bravura household in Chile under stern Dolores Bravura and the dark shadow of a father whose organs were rumored sold after heavy drinking before his body was left in the river. Rather than forcing submission through brute intimidation alone, Ramiro builds a calculated, civilized syndicate through deals, leverage, and making counterparts feel heard while holding the reins.",
+        notes: "Offers fine Chilean wine and quality Chilean cigars to guests at the table to set a composed, high-stakes atmosphere before negotiations."
       },
       charWolf: {
-        name: "WOLF // BOSS YARDIMCISI",
-        age: "Belirlenecek",
-        birth: "Belirlenecek",
-        res: "De'Mente Merkez",
+        name: "WOLF // RIGHT HAND",
+        age: "TBD",
+        birth: "TBD",
+        res: "De'Mente HQ",
         hair: "--",
         eyes: "--",
         height: "--",
         weight: "--",
         sign: "WOLF.",
-        portraitHtml: "[WOLF FOTO]",
+        portraitHtml: "[WOLF PHOTO]",
         emblemHtml: "[EMBLEM / 02]",
-        skills: "Ramiro Bravura'nın sağ kolu, saha koordinasyonu, taktik destek.",
-        bio: "Boss'un yardımcısı olarak konumlandırılan karakter. Detayları güncellenecek.",
-        notes: "Kayıt güncellenmeyi bekliyor..."
+        skills: "El Lion's right hand, operational coordination, tactical execution.",
+        bio: "Positioned as El Lion's trusted second-in-command. Full profile details to be added.",
+        notes: "Record pending update..."
       },
       charY: {
-        name: "CROW // AYRI KARAKTER",
-        age: "Belirlenecek",
-        birth: "Belirlenecek",
-        res: "De'Mente Merkez",
+        name: "CROW // STANDALONE",
+        age: "TBD",
+        birth: "TBD",
+        res: "De'Mente HQ",
         hair: "--",
         eyes: "--",
         height: "--",
@@ -1521,15 +1609,15 @@
         sign: "CROW.",
         portraitHtml: `<img src="${IMG_CROW}" alt="Crow Character">`,
         emblemHtml: "[EMBLEM / 02]",
-        skills: "Gözlem, gölgelerde hareket, kargaların habercisi.",
-        bio: "Wolf'tan ayrı, sıfırdan kendi başına kurgulanan karakter.",
-        notes: "Kayıt güncellenmeyi bekliyor..."
+        skills: "Observation, shadow movement, intelligence gathering.",
+        bio: "An independent character separate from Wolf, built from scratch for the archive.",
+        notes: "Record pending update..."
       },
       charZ: {
-        name: "CHARACTER Z [TASLAK]",
-        age: "Belirlenecek",
-        birth: "Belirlenecek",
-        res: "De'Mente Merkez",
+        name: "CHARACTER Z [DRAFT]",
+        age: "TBD",
+        birth: "TBD",
+        res: "De'Mente HQ",
         hair: "--",
         eyes: "--",
         height: "--",
@@ -1537,25 +1625,25 @@
         sign: "Z.",
         portraitHtml: "[PORTRAIT 01]",
         emblemHtml: "[EMBLEM / 02]",
-        skills: "Hız, kurnazlık, izini kaybettirme.",
-        bio: "Dosyasının üstünden uzanan beyaz tavşan kulaklarına dokunulduğunda aşağı kayıp gizlenir.",
-        notes: "Dosyanın üst kenarına bak..."
+        skills: "Speed, cunning, vanishing without a trace.",
+        bio: "White rabbit ears emerge above the file; tapping them slides them down out of sight.",
+        notes: "Check the top edge of the dossier..."
       },
       charSnake: {
         name: "SNAKE",
-        age: "Belirlenecek",
-        birth: "Belirlenecek",
-        res: "De'Mente Merkez",
+        age: "TBD",
+        birth: "TBD",
+        res: "De'Mente HQ",
         hair: "--",
         eyes: "--",
         height: "--",
         weight: "--",
         sign: "S.",
-        portraitHtml: "[SNAKE FOTO]",
+        portraitHtml: "[SNAKE PHOTO]",
         emblemHtml: "[EMBLEM / 02]",
-        skills: "Sessiz sızma, soğukkanlı takip, kıvrak manevra.",
-        bio: "Dosyası açıldığında ortama süzülen yılan motifleriyle öne çıkan karakter.",
-        notes: "Snake görseli güncellenecek."
+        skills: "Silent infiltration, cold pursuit, agile evasion.",
+        bio: "Character defined by serpentine precision and a coiled serpent wrapping the dossier.",
+        notes: "Direct image URL needed for Snake portrait."
       }
     };
 
@@ -1574,13 +1662,13 @@
       titleClickCount++;
       if (titleClickCount >= 5) {
         titleClickCount = 0;
-        showToast("EASTER EGG // ZİHİN KAYDI AÇILDI");
+        showToast("EASTER EGG // MIND LOG UNLOCKED");
       }
     }
 
     function triggerCrowEasterEgg() {
       playCrowSound();
-      showToast("KARGA // GÖLGELER İZLİYOR");
+      showToast("CROW // SHADOWS ARE WATCHING");
     }
 
     window.addEventListener('keydown', (e) => {
@@ -1588,7 +1676,7 @@
         typedBuffer = (typedBuffer + e.key.toLowerCase()).slice(-7);
         if (typedBuffer === 'demente') {
           typedBuffer = "";
-          showToast("GİZLİ KOD // DE'MENTE AKTİF");
+          showToast("SECRET CODE // DE'MENTE ACTIVE");
         }
       }
     });
@@ -1625,9 +1713,9 @@
       btnEl.classList.add('active-loc');
       const slot = document.getElementById('mapImageSlot');
       if (key === 'zone1') {
-        slot.textContent = "BÖLGE 01 — Harita görseli buraya eklenecek.";
+        slot.textContent = "ZONE 01 — Territory visual will be placed here.";
       } else {
-        slot.textContent = "BÖLGE 02 — Harita görseli buraya eklenecek.";
+        slot.textContent = "ZONE 02 — Territory visual will be placed here.";
       }
     }
 
@@ -1637,33 +1725,33 @@
     }
 
     function resetFamilyTreeDefaults() {
-      document.getElementById('ft-sib-01').innerHTML = "[FOTO]";
-      document.getElementById('ft-sib-02').innerHTML = "[FOTO]";
-      document.getElementById('ft-sib-03').innerHTML = "[FOTO]";
-      document.getElementById('ft-sib-04').innerHTML = "[FOTO]";
-      document.getElementById('ft-sib-05').innerHTML = "[FOTO]";
+      document.getElementById('ft-sib-01').innerHTML = "[PHOTO]";
+      document.getElementById('ft-sib-02').innerHTML = "[PHOTO]";
+      document.getElementById('ft-sib-03').innerHTML = "[PHOTO]";
+      document.getElementById('ft-sib-04').innerHTML = "[PHOTO]";
+      document.getElementById('ft-sib-05').innerHTML = "[PHOTO]";
 
       document.getElementById('ft-mother-title').textContent = "DOLORES BRAVURA";
       document.getElementById('ft-sib-01-title').textContent = "FRESIA";
       document.getElementById('ft-sib-02-title').textContent = "CASSANDRA";
       document.getElementById('ft-sib-03-title').textContent = "DULCE";
-      document.getElementById('ft-sib-04-title').textContent = "İSIDORA";
+      document.getElementById('ft-sib-04-title').textContent = "ISIDORA";
       document.getElementById('ft-sib-05-title').textContent = "RAMIRO BRAVURA";
 
       document.getElementById('ft-father-hover').innerHTML =
-        `<strong>Yaş:</strong> ?<br><strong>Medeni Durum:</strong> ?<br><strong>Durum:</strong> ?`;
+        `<strong>Age:</strong> ?<br><strong>Marital Status:</strong> ?<br><strong>Status:</strong> ?`;
       document.getElementById('ft-mother-hover').innerHTML =
-        `<strong>Anne:</strong> Dolores Bravura<br><strong>Medeni Durum:</strong> Evli<br><strong>Durum:</strong> Live`;
+        `<strong>Mother:</strong> Dolores Bravura<br><strong>Marital Status:</strong> Married<br><strong>Status:</strong> Live`;
       document.getElementById('ft-sib-01-hover').innerHTML =
-        `<strong>İsim:</strong> Fresia<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+        `<strong>Name:</strong> Fresia<br><strong>Marital Status:</strong> Single<br><strong>Status:</strong> Live`;
       document.getElementById('ft-sib-02-hover').innerHTML =
-        `<strong>İsim:</strong> Cassandra<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+        `<strong>Name:</strong> Cassandra<br><strong>Marital Status:</strong> Single<br><strong>Status:</strong> Live`;
       document.getElementById('ft-sib-03-hover').innerHTML =
-        `<strong>İsim:</strong> Dulce<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+        `<strong>Name:</strong> Dulce<br><strong>Marital Status:</strong> Single<br><strong>Status:</strong> Live`;
       document.getElementById('ft-sib-04-hover').innerHTML =
-        `<strong>İsim:</strong> İsidora<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+        `<strong>Name:</strong> Isidora<br><strong>Marital Status:</strong> Single<br><strong>Status:</strong> Live`;
       document.getElementById('ft-sib-05-hover').innerHTML =
-        `<strong>İsim:</strong> Ramiro Bravura<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+        `<strong>Name:</strong> Ramiro Bravura<br><strong>Marital Status:</strong> Single<br><strong>Status:</strong> Live`;
     }
 
     function openFamilyTreeModal(charKey) {
@@ -1676,17 +1764,17 @@
         document.getElementById('ft-sib-05').innerHTML = `<img src="${IMG_BOSS}" alt="Ramiro Bravura">`;
 
         document.getElementById('ft-mother-hover').innerHTML =
-          `<strong>Dolores Bravura</strong><br>Sert, katı ve acımasız aile lideri<br><strong>Durum:</strong> Live`;
+          `<strong>Dolores Bravura</strong><br>Strict, harsh, ruthless matriarch<br><strong>Status:</strong> Live`;
         document.getElementById('ft-sib-01-hover').innerHTML =
-          `<strong>Fresia (38)</strong><br>En büyük abla (WW gücü), Şili gang lideri<br><strong>Durum:</strong> Live`;
+          `<strong>Fresia (38)</strong><br>Eldest sister (WW strength), Chilean gang leader<br><strong>Status:</strong> Live`;
         document.getElementById('ft-sib-02-hover').innerHTML =
-          `<strong>Cassandra (36)</strong><br>İkinci abla (suikastçı / FBI-istihbarat sızması)<br><strong>Durum:</strong> Live`;
+          `<strong>Cassandra (36)</strong><br>Second sister (operative / intelligence infiltration)<br><strong>Status:</strong> Live`;
         document.getElementById('ft-sib-03-hover').innerHTML =
-          `<strong>Dulce (35 - İkiz)</strong><br>Tatlı görünümlü acımasız çatlak (işkence / tehdit)<br><strong>Durum:</strong> Live`;
+          `<strong>Dulce (35 - Twin)</strong><br>Sweet-faced ruthless torturer / threat tool<br><strong>Status:</strong> Live`;
         document.getElementById('ft-sib-04-hover').innerHTML =
-          `<strong>İsidora (35 - İkiz)</strong><br>Güler yüzlü/sakin, femdom köle beklentisi, kartel & uyuşturucu<br><strong>Durum:</strong> Live`;
+          `<strong>Isidora (35 - Twin)</strong><br>Warm & calm, femdom dominance, trafficking & cartels<br><strong>Status:</strong> Live`;
         document.getElementById('ft-sib-05-hover').innerHTML =
-          `<strong>Ramiro Bravura (32)</strong><br>194 cm (6'4"), 104 kg — Stratejik Boss<br><strong>Durum:</strong> Live`;
+          `<strong>Ramiro Bravura (32)</strong><br>194 cm (6'4"), 104 kg — El Lion<br><strong>Status:</strong> Live`;
       }
 
       document.getElementById('familyTreeModal').classList.add('open');
@@ -1756,7 +1844,7 @@
     }
 
     function spawnSnakeDrops() {
-      for (let i = 0; i < 20; i++) {
+      for (let i = 0; i < 18; i++) {
         const drop = document.createElement('div');
         drop.className = 'snake-scale-drop';
         drop.style.left = Math.random() * 98 + 'vw';
@@ -1807,6 +1895,8 @@
       lightning.classList.remove('flash');
       const ears = document.getElementById('rabbitEars');
       ears.classList.remove('visible', 'hidden-ears');
+      const snakeCoil = document.getElementById('snakeCoilWrap');
+      snakeCoil.classList.remove('visible');
 
       if (charKey === 'charX') {
         void lightning.offsetWidth;
@@ -1817,6 +1907,7 @@
       } else if (charKey === 'charZ') {
         ears.classList.add('visible');
       } else if (charKey === 'charSnake') {
+        snakeCoil.classList.add('visible');
         spawnSnakeDrops();
       }
 
