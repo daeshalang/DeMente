@@ -713,7 +713,7 @@
 
   .tree-node {
     position: relative;
-    width: 132px;
+    width: 138px;
     padding: 8px;
     background: #1a0f2e;
     border: 1px solid var(--purple-main);
@@ -794,12 +794,12 @@
     bottom: calc(100% + 8px);
     left: 50%;
     transform: translateX(-50%);
-    min-width: 165px;
+    min-width: 205px;
     background: #090510;
     border: 1px solid var(--emerald-main);
     padding: 8px 10px;
-    font-size: 0.7rem;
-    line-height: 1.5;
+    font-size: 0.68rem;
+    line-height: 1.45;
     text-align: left;
     color: var(--text-light);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
@@ -910,21 +910,22 @@
     font-size: 0.85rem;
     display: flex;
     justify-content: space-between;
+    gap: 12px;
   }
 
   .field-row:last-child { border-bottom: none; }
-  .field-label { color: var(--emerald-main); font-weight: 700; }
-  .field-val { color: var(--text-light); }
+  .field-label { color: var(--emerald-main); font-weight: 700; flex-shrink: 0; }
+  .field-val { color: var(--text-light); text-align: right; }
 
   .dossier-mid {
     display: grid;
-    grid-template-columns: 210px 1fr;
+    grid-template-columns: 230px 1fr;
     border: 1px solid var(--purple-main);
     margin-bottom: 14px;
   }
 
   .mid-left { border-right: 1px solid var(--purple-main); }
-  .mid-right { padding: 12px; font-size: 0.85rem; }
+  .mid-right { padding: 12px; font-size: 0.85rem; line-height: 1.55; }
 
   .dossier-box {
     border: 1px solid var(--purple-main);
@@ -932,7 +933,7 @@
     margin-bottom: 12px;
     min-height: 90px;
     font-size: 0.85rem;
-    line-height: 1.6;
+    line-height: 1.65;
   }
 
   .dossier-box:last-child { margin-bottom: 0; }
@@ -1150,18 +1151,24 @@
               <div class="char-grid">
                 <div class="char-card" onclick="openDossier('charX')">
                   <div class="char-photo-box">
-                    <img src="https://i.ibb.co/C5st8YP9/e671e7e5-4f2b-4ab4-b81c-b2eb60362ec4.jpg" alt="Boss Character">
+                    <img src="https://i.ibb.co/C5st8YP9/e671e7e5-4f2b-4ab4-b81c-b2eb60362ec4.jpg" alt="Ramiro Bravura">
                   </div>
-                  <div class="char-name-below">CHARACTER X</div>
-                  <div class="char-role">DOSYAYI AÇ // ŞİMŞEK & BOSS</div>
+                  <div class="char-name-below">RAMIRO BRAVURA</div>
+                  <div class="char-role">DOSYAYI AÇ // THE BOSS</div>
+                </div>
+
+                <div class="char-card" onclick="openDossier('charWolf')">
+                  <div class="char-photo-box">[WOLF FOTO]</div>
+                  <div class="char-name-below">WOLF</div>
+                  <div class="char-role">DOSYAYI AÇ // BOSS YARDIMCISI</div>
                 </div>
 
                 <div class="char-card" onclick="openDossier('charY')">
                   <div class="char-photo-box">
                     <img src="https://i.ibb.co/TMH6q1N0/2d256d51-381d-4f04-b470-c7e25854804f.jpg" alt="Crow Character">
                   </div>
-                  <div class="char-name-below">CHARACTER Y</div>
-                  <div class="char-role">DOSYAYI AÇ // KARGA</div>
+                  <div class="char-name-below">CROW</div>
+                  <div class="char-role">DOSYAYI AÇ // CROW (AYRI KARAKTER)</div>
                 </div>
 
                 <div class="char-card" onclick="openDossier('charZ')">
@@ -1171,9 +1178,7 @@
                 </div>
 
                 <div class="char-card" onclick="openDossier('charSnake')">
-                  <div class="char-photo-box">
-                    <img src="https://i.ibb.co/0jT2prm8/b200fc66-d257-4749-b3be-296e81f7c21a.jpg" alt="Snake Character">
-                  </div>
+                  <div class="char-photo-box">[SNAKE FOTO]</div>
                   <div class="char-name-below">SNAKE</div>
                   <div class="char-role">DOSYAYI AÇ // SNAKE</div>
                 </div>
@@ -1200,18 +1205,24 @@
               <div class="char-grid">
                 <div class="char-card" onclick="openFamilyTreeModal('charX')">
                   <div class="char-photo-box">
-                    <img src="https://i.ibb.co/C5st8YP9/e671e7e5-4f2b-4ab4-b81c-b2eb60362ec4.jpg" alt="Boss Character">
+                    <img src="https://i.ibb.co/C5st8YP9/e671e7e5-4f2b-4ab4-b81c-b2eb60362ec4.jpg" alt="Ramiro Bravura">
                   </div>
-                  <div class="char-name-below">CHARACTER X</div>
-                  <div class="char-role">FAMILY TREE // BOSS</div>
+                  <div class="char-name-below">RAMIRO BRAVURA</div>
+                  <div class="char-role">FAMILY TREE // BRAVURA AİLESİ</div>
+                </div>
+
+                <div class="char-card" onclick="openFamilyTreeModal('charWolf')">
+                  <div class="char-photo-box">[WOLF FOTO]</div>
+                  <div class="char-name-below">WOLF</div>
+                  <div class="char-role">FAMILY TREE // WOLF</div>
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charY')">
                   <div class="char-photo-box">
                     <img src="https://i.ibb.co/TMH6q1N0/2d256d51-381d-4f04-b470-c7e25854804f.jpg" alt="Crow Character">
                   </div>
-                  <div class="char-name-below">CHARACTER Y</div>
-                  <div class="char-role">FAMILY TREE // KARGA</div>
+                  <div class="char-name-below">CROW</div>
+                  <div class="char-role">FAMILY TREE // CROW</div>
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charZ')">
@@ -1221,9 +1232,7 @@
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charSnake')">
-                  <div class="char-photo-box">
-                    <img src="https://i.ibb.co/0jT2prm8/b200fc66-d257-4749-b3be-296e81f7c21a.jpg" alt="Snake Character">
-                  </div>
+                  <div class="char-photo-box">[SNAKE FOTO]</div>
                   <div class="char-name-below">SNAKE</div>
                   <div class="char-role">FAMILY TREE // SNAKE</div>
                 </div>
@@ -1267,16 +1276,16 @@
                 <div class="subpanel-box">
                   <div class="subpanel-title">KARAKTER MEKANLARI</div>
 
-                  <div class="venue-card" onclick="showVenue('X Karakterinin Mekanı', 'Ev / güvenli nokta notu buraya eklenecek.')">
-                    <div style="font-family:'Cinzel',serif; font-size:1rem;">X Karakterinin Mekanı</div>
+                  <div class="venue-card" onclick="showVenue('Ramiro Bravura Mekanı', 'Strateji, anlaşma ve Şili şarabı/puro masası.')">
+                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Ramiro Bravura Mekanı</div>
                   </div>
 
-                  <div class="venue-card" onclick="showVenue('Y Karakterinin Mekanı', 'Club / mekan notu buraya eklenecek.')">
-                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Y Karakterinin Mekanı</div>
+                  <div class="venue-card" onclick="showVenue('Wolf Mekanı', 'Boss yardımcısı / operasyon noktası.')">
+                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Wolf Mekanı</div>
                   </div>
 
-                  <div class="venue-card" onclick="showVenue('Z Karakterinin Mekanı', 'Ofis / mekan notu buraya eklenecek.')">
-                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Z Karakterinin Mekanı</div>
+                  <div class="venue-card" onclick="showVenue('Crow Mekanı', 'Gözlem ve haberleşme noktası.')">
+                    <div style="font-family:'Cinzel',serif; font-size:1rem;">Crow Mekanı</div>
                   </div>
 
                   <div id="venueDetailBox" class="venue-detail-box">
@@ -1321,12 +1330,12 @@
         <h2 id="treeModalTitle" class="section-heading" style="font-size:1.45rem;">FAMILY TREE</h2>
       </div>
 
-      <!-- BABA (? GLİTCH) — MARRIAGE — ANNE -->
+      <!-- BABA (? GLİTCH) — MARRIAGE — DOLORES BRAVURA -->
       <div class="parents-row">
         <div class="tree-node unknown-father-node">
           <div class="tree-thumb"><span class="glitch-q">?</span></div>
           <div class="node-title" style="color:var(--text-muted);">?</div>
-          <div class="node-hover-card">
+          <div class="node-hover-card" id="ft-father-hover">
             <strong>Yaş:</strong> ?<br>
             <strong>Medeni Durum:</strong> ?<br>
             <strong>Durum:</strong> ?
@@ -1340,8 +1349,8 @@
 
         <div class="tree-node">
           <div class="tree-thumb">[FOTO]</div>
-          <div class="node-title">ANNE</div>
-          <div class="node-hover-card">
+          <div class="node-title" id="ft-mother-title">DOLORES BRAVURA</div>
+          <div class="node-hover-card" id="ft-mother-hover">
             <strong>Yaş:</strong> --<br>
             <strong>Medeni Durum:</strong> Evli<br>
             <strong>Durum:</strong> Live
@@ -1351,54 +1360,54 @@
 
       <div class="tree-drop-line"></div>
 
-      <!-- 5 KARDEŞ DÜMDÜZ YAN YANA (01 BÜYÜK ABLA SADECE BOSS AĞACINDA, 05 BOSS) -->
+      <!-- 5 KARDEŞ DÜMDÜZ YAN YANA -->
       <div class="siblings-horizontal-bar">
         <div class="tree-node">
           <div class="tree-thumb" id="ft-sib-01">[FOTO]</div>
-          <div class="node-title">KARDEŞ 01</div>
-          <div class="node-hover-card">
+          <div class="node-title" id="ft-sib-01-title">FRESIA</div>
+          <div class="node-hover-card" id="ft-sib-01-hover">
             <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> --<br>
+            <strong>Medeni Durum:</strong> Bekar<br>
             <strong>Durum:</strong> Live
           </div>
         </div>
 
         <div class="tree-node">
           <div class="tree-thumb" id="ft-sib-02">[FOTO]</div>
-          <div class="node-title">KARDEŞ 02</div>
-          <div class="node-hover-card">
+          <div class="node-title" id="ft-sib-02-title">CASSANDRA</div>
+          <div class="node-hover-card" id="ft-sib-02-hover">
             <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> --<br>
+            <strong>Medeni Durum:</strong> Bekar<br>
             <strong>Durum:</strong> Live
           </div>
         </div>
 
         <div class="tree-node">
           <div class="tree-thumb" id="ft-sib-03">[FOTO]</div>
-          <div class="node-title">KARDEŞ 03</div>
-          <div class="node-hover-card">
+          <div class="node-title" id="ft-sib-03-title">DULCE</div>
+          <div class="node-hover-card" id="ft-sib-03-hover">
             <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> --<br>
+            <strong>Medeni Durum:</strong> Bekar<br>
             <strong>Durum:</strong> Live
           </div>
         </div>
 
         <div class="tree-node">
           <div class="tree-thumb" id="ft-sib-04">[FOTO]</div>
-          <div class="node-title">KARDEŞ 04</div>
-          <div class="node-hover-card">
+          <div class="node-title" id="ft-sib-04-title">İSIDORA</div>
+          <div class="node-hover-card" id="ft-sib-04-hover">
             <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> --<br>
+            <strong>Medeni Durum:</strong> Bekar<br>
             <strong>Durum:</strong> Live
           </div>
         </div>
 
         <div class="tree-node boss-node">
           <div class="tree-thumb" id="ft-sib-05">[FOTO]</div>
-          <div class="node-title">BOSS</div>
-          <div class="node-hover-card">
+          <div class="node-title" id="ft-sib-05-title">RAMIRO BRAVURA</div>
+          <div class="node-hover-card" id="ft-sib-05-hover">
             <strong>Yaş:</strong> --<br>
-            <strong>Medeni Durum:</strong> --<br>
+            <strong>Medeni Durum:</strong> Bekar<br>
             <strong>Durum:</strong> Live
           </div>
         </div>
@@ -1408,7 +1417,7 @@
 
   <!-- TAM EKRAN AÇILAN KARAKTER DOSYASI PENCERESİ -->
   <div id="dossierModal" class="full-modal" onclick="closeDossierOutside(event)">
-    <div class="modal-shell" style="max-width:860px; background:#1b102c;">
+    <div class="modal-shell" style="max-width:900px; background:#1b102c;">
       <button class="close-modal-btn" onclick="closeDossier()">✕ DOSYAYI KAPAT</button>
 
       <!-- CHARACTER Z İÇİN DOSYA KUTUCUKLARININ ÜSTÜNDE BELİREN, YUKARI BAKAN BEYAZ TAVŞAN KULAKLARI -->
@@ -1466,11 +1475,26 @@
     const IMG_BIG_SISTER = "https://i.ibb.co/WWWy9QH4/546596c1-7cc4-42d5-8001-3e0b53ca63fe.jpg";
     const IMG_BOSS = "https://i.ibb.co/C5st8YP9/e671e7e5-4f2b-4ab4-b81c-b2eb60362ec4.jpg";
     const IMG_CROW = "https://i.ibb.co/TMH6q1N0/2d256d51-381d-4f04-b470-c7e25854804f.jpg";
-    const IMG_SNAKE = "https://i.ibb.co/0jT2prm8/b200fc66-d257-4749-b3be-296e81f7c21a.jpg";
 
     const dossiers = {
       charX: {
-        name: "CHARACTER X // BOSS",
+        name: "RAMIRO BRAVURA // THE BOSS",
+        age: "32",
+        birth: "Valparaíso, Şili",
+        res: "De'Mente Merkez / Uluslararası Hat",
+        hair: "Koyu kahverengi / Siyah, özenle geriye taranmış, ensede kısa ve keskin kesim",
+        eyes: "Koyu kehribar / Keskin kahverengi",
+        height: "194 cm (6'4\")",
+        weight: "104 kg (229 lbs)",
+        sign: "Özel dikim koyu İtalyan takım elbise, gümüş/altın Zippo, kaliteli Şili puroları ve pahalı Şili şarabı ikramı; ellerini birleştirerek sakin konuşma.",
+        portraitHtml: `<img src="${IMG_BOSS}" alt="Ramiro Bravura">`,
+        emblemHtml: "[EMBLEM / 02]",
+        skills: "Makyavelist diplomasi ve manipülasyon, stratejik zekâ ve kriz yönetimi, çok dillilik (İspanyolca, İngilizce, İtalyanca/Portekizce), yakın dövüş ve fiziksel güç, finans ve kara para aklama.",
+        bio: "Anaerkil (matriarchal/femdom) Bravura ailesinin içinde büyüyen 'erkek aslan'. Katı ve taş kalpli anne Dolores Bravura'nın ve babasının içki masasında organlarının satılıp bedeninin nehre bırakıldığı gölgenin ortasında; korkuyla boyun eğdirmek yerine karşı tarafa söz hakkı hissettirip anlaşma ve stratejiyle ilerleyen medeni, dokunulmaz bir yeraltı imparatorluğu kurmayı hedefliyor.",
+        notes: "Aile kardeşleri: Fresia (38, en büyük abla — WW gücü, Şili gang lideri, Ramiro ile güç savaşı ve ters düşme), Cassandra (36, ikinci abla — devlet/istihbarat/FBI içi sızma veya suikastçı, kirli iz silme), Dulce (35, ikiz — tatlı görünümlü acımasız işkenceci/çatlak, tehdit aracı), İsidora (35, ikiz — güler yüzlü/sakin, femdom köle beklentisi, uyuşturucu sevkiyatı ve kartel bağlantıları). Sağ kolu/yardımcısı Wolf."
+      },
+      charWolf: {
+        name: "WOLF // BOSS YARDIMCISI",
         age: "Belirlenecek",
         birth: "Belirlenecek",
         res: "De'Mente Merkez",
@@ -1478,15 +1502,15 @@
         eyes: "--",
         height: "--",
         weight: "--",
-        sign: "X.",
-        portraitHtml: `<img src="${IMG_BOSS}" alt="Boss Character">`,
+        sign: "WOLF.",
+        portraitHtml: "[WOLF FOTO]",
         emblemHtml: "[EMBLEM / 02]",
-        skills: "Strateji, zihin oyunları, fırtına öncesi sessizlik.",
-        bio: "Dosyası açıldığında gökyüzünü yaran şimşekle özdeşleşen Boss.",
-        notes: "05. Kardeş / Boss dosyası."
+        skills: "Ramiro Bravura'nın sağ kolu, saha koordinasyonu, taktik destek.",
+        bio: "Boss'un yardımcısı olarak konumlandırılan karakter. Detayları güncellenecek.",
+        notes: "Kayıt güncellenmeyi bekliyor..."
       },
       charY: {
-        name: "CHARACTER Y // CROW",
+        name: "CROW // AYRI KARAKTER",
         age: "Belirlenecek",
         birth: "Belirlenecek",
         res: "De'Mente Merkez",
@@ -1494,11 +1518,11 @@
         eyes: "--",
         height: "--",
         weight: "--",
-        sign: "Y.",
+        sign: "CROW.",
         portraitHtml: `<img src="${IMG_CROW}" alt="Crow Character">`,
         emblemHtml: "[EMBLEM / 02]",
         skills: "Gözlem, gölgelerde hareket, kargaların habercisi.",
-        bio: "Adı anıldığında etrafa siyah tüylerin saçıldığı gizemli üye.",
+        bio: "Wolf'tan ayrı, sıfırdan kendi başına kurgulanan karakter.",
         notes: "Kayıt güncellenmeyi bekliyor..."
       },
       charZ: {
@@ -1527,11 +1551,11 @@
         height: "--",
         weight: "--",
         sign: "S.",
-        portraitHtml: `<img src="${IMG_SNAKE}" alt="Snake Character">`,
+        portraitHtml: "[SNAKE FOTO]",
         emblemHtml: "[EMBLEM / 02]",
         skills: "Sessiz sızma, soğukkanlı takip, kıvrak manevra.",
         bio: "Dosyası açıldığında ortama süzülen yılan motifleriyle öne çıkan karakter.",
-        notes: "Snake dosyası aktif."
+        notes: "Snake görseli güncellenecek."
       }
     };
 
@@ -1612,19 +1636,57 @@
         `<strong style="color:var(--emerald-soft);">${title}:</strong><br>${desc}`;
     }
 
-    function openFamilyTreeModal(charKey) {
-      const name = dossiers[charKey] ? dossiers[charKey].name : charKey.toUpperCase();
-      document.getElementById('treeModalTitle').textContent = `FAMILY TREE // ${name}`;
-
+    function resetFamilyTreeDefaults() {
       document.getElementById('ft-sib-01').innerHTML = "[FOTO]";
       document.getElementById('ft-sib-02').innerHTML = "[FOTO]";
       document.getElementById('ft-sib-03').innerHTML = "[FOTO]";
       document.getElementById('ft-sib-04').innerHTML = "[FOTO]";
       document.getElementById('ft-sib-05').innerHTML = "[FOTO]";
 
+      document.getElementById('ft-mother-title').textContent = "DOLORES BRAVURA";
+      document.getElementById('ft-sib-01-title').textContent = "FRESIA";
+      document.getElementById('ft-sib-02-title').textContent = "CASSANDRA";
+      document.getElementById('ft-sib-03-title').textContent = "DULCE";
+      document.getElementById('ft-sib-04-title').textContent = "İSIDORA";
+      document.getElementById('ft-sib-05-title').textContent = "RAMIRO BRAVURA";
+
+      document.getElementById('ft-father-hover').innerHTML =
+        `<strong>Yaş:</strong> ?<br><strong>Medeni Durum:</strong> ?<br><strong>Durum:</strong> ?`;
+      document.getElementById('ft-mother-hover').innerHTML =
+        `<strong>Anne:</strong> Dolores Bravura<br><strong>Medeni Durum:</strong> Evli<br><strong>Durum:</strong> Live`;
+      document.getElementById('ft-sib-01-hover').innerHTML =
+        `<strong>İsim:</strong> Fresia<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+      document.getElementById('ft-sib-02-hover').innerHTML =
+        `<strong>İsim:</strong> Cassandra<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+      document.getElementById('ft-sib-03-hover').innerHTML =
+        `<strong>İsim:</strong> Dulce<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+      document.getElementById('ft-sib-04-hover').innerHTML =
+        `<strong>İsim:</strong> İsidora<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+      document.getElementById('ft-sib-05-hover').innerHTML =
+        `<strong>İsim:</strong> Ramiro Bravura<br><strong>Medeni Durum:</strong> Bekar<br><strong>Durum:</strong> Live`;
+    }
+
+    function openFamilyTreeModal(charKey) {
+      const name = dossiers[charKey] ? dossiers[charKey].name : charKey.toUpperCase();
+      document.getElementById('treeModalTitle').textContent = `FAMILY TREE // ${name}`;
+      resetFamilyTreeDefaults();
+
       if (charKey === 'charX') {
-        document.getElementById('ft-sib-01').innerHTML = `<img src="${IMG_BIG_SISTER}" alt="Kardeş 01">`;
-        document.getElementById('ft-sib-05').innerHTML = `<img src="${IMG_BOSS}" alt="Boss">`;
+        document.getElementById('ft-sib-01').innerHTML = `<img src="${IMG_BIG_SISTER}" alt="Fresia">`;
+        document.getElementById('ft-sib-05').innerHTML = `<img src="${IMG_BOSS}" alt="Ramiro Bravura">`;
+
+        document.getElementById('ft-mother-hover').innerHTML =
+          `<strong>Dolores Bravura</strong><br>Sert, katı ve acımasız aile lideri<br><strong>Durum:</strong> Live`;
+        document.getElementById('ft-sib-01-hover').innerHTML =
+          `<strong>Fresia (38)</strong><br>En büyük abla (WW gücü), Şili gang lideri<br><strong>Durum:</strong> Live`;
+        document.getElementById('ft-sib-02-hover').innerHTML =
+          `<strong>Cassandra (36)</strong><br>İkinci abla (suikastçı / FBI-istihbarat sızması)<br><strong>Durum:</strong> Live`;
+        document.getElementById('ft-sib-03-hover').innerHTML =
+          `<strong>Dulce (35 - İkiz)</strong><br>Tatlı görünümlü acımasız çatlak (işkence / tehdit)<br><strong>Durum:</strong> Live`;
+        document.getElementById('ft-sib-04-hover').innerHTML =
+          `<strong>İsidora (35 - İkiz)</strong><br>Güler yüzlü/sakin, femdom köle beklentisi, kartel & uyuşturucu<br><strong>Durum:</strong> Live`;
+        document.getElementById('ft-sib-05-hover').innerHTML =
+          `<strong>Ramiro Bravura (32)</strong><br>194 cm (6'4"), 104 kg — Stratejik Boss<br><strong>Durum:</strong> Live`;
       }
 
       document.getElementById('familyTreeModal').classList.add('open');
