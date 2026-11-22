@@ -1184,7 +1184,9 @@
                 </div>
 
                 <div class="char-card" onclick="openDossier('charWolf')">
-                  <div class="char-photo-box">[WOLF PHOTO]</div>
+                  <div class="char-photo-box">
+                    <img src="https://i.ibb.co/237SBYnq/b6216517-f839-4193-97ab-e453f6b2507e.jpg" alt="Wolf">
+                  </div>
                   <div class="char-name-below">WOLF</div>
                   <div class="char-role">OPEN DOSSIER // RIGHT HAND</div>
                 </div>
@@ -1198,9 +1200,11 @@
                 </div>
 
                 <div class="char-card" onclick="openDossier('charZ')">
-                  <div class="char-photo-box">[PHOTO Z]</div>
+                  <div class="char-photo-box">
+                    <img src="https://i.ibb.co/BHDpnRPf/50e76bc8-3981-4e14-ac7e-9ca033eb5fdf.jpg" alt="Bunny Character">
+                  </div>
                   <div class="char-name-below">CHARACTER Z</div>
-                  <div class="char-role">OPEN DOSSIER // RABBIT</div>
+                  <div class="char-role">OPEN DOSSIER // BUNNY</div>
                 </div>
 
                 <div class="char-card" onclick="openDossier('charSnake')">
@@ -1238,7 +1242,9 @@
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charWolf')">
-                  <div class="char-photo-box">[WOLF PHOTO]</div>
+                  <div class="char-photo-box">
+                    <img src="https://i.ibb.co/237SBYnq/b6216517-f839-4193-97ab-e453f6b2507e.jpg" alt="Wolf">
+                  </div>
                   <div class="char-name-below">WOLF</div>
                   <div class="char-role">FAMILY TREE // WOLF</div>
                 </div>
@@ -1252,9 +1258,11 @@
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charZ')">
-                  <div class="char-photo-box">[PHOTO Z]</div>
+                  <div class="char-photo-box">
+                    <img src="https://i.ibb.co/BHDpnRPf/50e76bc8-3981-4e14-ac7e-9ca033eb5fdf.jpg" alt="Bunny Character">
+                  </div>
                   <div class="char-name-below">CHARACTER Z</div>
-                  <div class="char-role">FAMILY TREE // RABBIT</div>
+                  <div class="char-role">FAMILY TREE // BUNNY</div>
                 </div>
 
                 <div class="char-card" onclick="openFamilyTreeModal('charSnake')">
@@ -1374,7 +1382,9 @@
         </div>
 
         <div class="tree-node">
-          <div class="tree-thumb">[PHOTO]</div>
+          <div class="tree-thumb" id="ft-mother-thumb">
+            <img src="https://i.ibb.co/7tH58KD3/12f37936-c1fb-4f4d-8900-8256f4c90170.jpg" alt="Dolores Bravura">
+          </div>
           <div class="node-title" id="ft-mother-title">DOLORES BRAVURA</div>
           <div class="node-hover-card" id="ft-mother-hover">
             <strong>Mother:</strong> Dolores Bravura<br>
@@ -1457,7 +1467,6 @@
       <!-- FULL-HEIGHT COILED SNAKE WRAPPING AROUND THE SNAKE DOSSIER CARD -->
       <div id="snakeCoilWrap" class="snake-coil-wrap" aria-hidden="true">
         <svg viewBox="0 0 940 760" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Coiled serpentine body winding down along the sides and wrapping across the card -->
           <path
             d="M 910 24
                C 938 85, 882 145, 916 215
@@ -1506,7 +1515,6 @@
             stroke-dasharray="7 9"
             stroke-linecap="round"
           />
-          <!-- Snake Head at top-right coil -->
           <g transform="translate(894, 8) rotate(22)">
             <path d="M 16 2 C 28 4, 34 14, 30 26 C 24 32, 10 32, 4 26 C 0 14, 6 4, 16 2 Z" fill="#092e22" stroke="#10b981" stroke-width="2"/>
             <circle cx="11" cy="12" r="2.2" fill="#6ee7b7"/>
@@ -1563,6 +1571,9 @@
     const IMG_BIG_SISTER = "https://i.ibb.co/WWWy9QH4/546596c1-7cc4-42d5-8001-3e0b53ca63fe.jpg";
     const IMG_BOSS = "https://i.ibb.co/C5st8YP9/e671e7e5-4f2b-4ab4-b81c-b2eb60362ec4.jpg";
     const IMG_CROW = "https://i.ibb.co/TMH6q1N0/2d256d51-381d-4f04-b470-c7e25854804f.jpg";
+    const IMG_WOLF = "https://i.ibb.co/237SBYnq/b6216517-f839-4193-97ab-e453f6b2507e.jpg";
+    const IMG_DOLORES = "https://i.ibb.co/7tH58KD3/12f37936-c1fb-4f4d-8900-8256f4c90170.jpg";
+    const IMG_BUNNY = "https://i.ibb.co/BHDpnRPf/50e76bc8-3981-4e14-ac7e-9ca033eb5fdf.jpg";
 
     const dossiers = {
       charX: {
@@ -1591,7 +1602,7 @@
         height: "--",
         weight: "--",
         sign: "WOLF.",
-        portraitHtml: "[WOLF PHOTO]",
+        portraitHtml: `<img src="${IMG_WOLF}" alt="Wolf">`,
         emblemHtml: "[EMBLEM / 02]",
         skills: "El Lion's right hand, operational coordination, tactical execution.",
         bio: "Positioned as El Lion's trusted second-in-command. Full profile details to be added.",
@@ -1614,7 +1625,7 @@
         notes: "Record pending update..."
       },
       charZ: {
-        name: "CHARACTER Z [DRAFT]",
+        name: "CHARACTER Z // BUNNY",
         age: "TBD",
         birth: "TBD",
         res: "De'Mente HQ",
@@ -1622,8 +1633,8 @@
         eyes: "--",
         height: "--",
         weight: "--",
-        sign: "Z.",
-        portraitHtml: "[PORTRAIT 01]",
+        sign: "BUNNY.",
+        portraitHtml: `<img src="${IMG_BUNNY}" alt="Bunny Character">`,
         emblemHtml: "[EMBLEM / 02]",
         skills: "Speed, cunning, vanishing without a trace.",
         bio: "White rabbit ears emerge above the file; tapping them slides them down out of sight.",
@@ -1725,6 +1736,7 @@
     }
 
     function resetFamilyTreeDefaults() {
+      document.getElementById('ft-mother-thumb').innerHTML = `<img src="${IMG_DOLORES}" alt="Dolores Bravura">`;
       document.getElementById('ft-sib-01').innerHTML = "[PHOTO]";
       document.getElementById('ft-sib-02').innerHTML = "[PHOTO]";
       document.getElementById('ft-sib-03').innerHTML = "[PHOTO]";
